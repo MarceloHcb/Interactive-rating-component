@@ -54,7 +54,7 @@ header{
     justify-content: space-evenly;   
     position: relative;    
 }
-.numbers h2{
+.num{
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -62,15 +62,15 @@ header{
     width: 60px;
     height: 60px;    
     cursor: pointer;
-}
-h2{
     background-color: hsl(214, 20%, 23%);
     color: hsl(217, 12%, 63%);  
 }
-.numbers h2:hover{
+   
+.num:hover{
     background-color: hsl(25, 97%, 53%);
     color: white;
 }
+
 input{
      visibility: hidden; 
 }
