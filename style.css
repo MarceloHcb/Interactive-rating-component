@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;500;700&display=swap');
+html{
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(216, 12%, 8%);
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+.box{
+    position: absolute;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;   
+    justify-content: center;
+    background-color: hsl(212, 24%, 12%);
+    border-radius: 30px;
+    width: 420px;
+    height: 45vh;
+    padding: 40px;
+    gap: 40px;
+}
+.star{
+    width: 60px;
+    height: 60px;
+    background-color: hsl(214, 20%, 23%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: start;
+    margin-left: 20px;
+}
+.content{
+    max-width: 90%;    
+}
+.content h1{
+    font-weight: 700;
+}
+.content p{
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: hsl(217, 12%, 63%);
+}
+.numbers{
+    display: flex;
+    justify-content: space-evenly;   
+    position: relative;    
+}
+.numbers h2{
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;    
+    cursor: pointer;
+}
+h2{
+    background-color: hsl(214, 20%, 23%);
+    color: hsl(217, 12%, 63%);  
+}
+.numbers h2:hover{
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+input{
+     visibility: hidden; 
+}
+.btn{
+    background-color: hsl(25, 97%, 53%);
+    height: 60px;
+    width: 98%;
+    align-self: center;
+    border-radius: 30px;
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
+.end{
+    display:none;
+    
+}
+.result{
+    display: flex;
+    align-items: center;
+}
+.result h2{
+    border-radius: 30px;
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(214, 20%, 23%);
+    padding: 10px;
+}
+.center{
+    text-align: center;
+    max-width: 100%;
+}
+.color{
+    background-color: hsl(217, 12%, 63%);
+}
+.active{
+    background-color: hsl(217, 12%, 63%); 
+    color: white;
+}
