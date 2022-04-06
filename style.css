@@ -114,3 +114,16 @@ input{
     background-color: hsl(217, 12%, 63%); 
     color: white;
 }
+@media(max-width: 500px){
+    .box{
+        width: 300px;
+        height: 52vh;
+    }   
+    .content{
+        max-width: 100%;    
+    }
+    .btn{
+        height: 80px;
+        width: 100%;       
+    }
+}

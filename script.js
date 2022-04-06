@@ -14,8 +14,7 @@ num.forEach((n, index) => {
     const active = document.querySelector(".active")
     if(active !== null){
       active.classList.remove("active")
-    } 
-    
+    }     
     selected = n.id
     n.classList.toggle("active")
     console.log(active)
