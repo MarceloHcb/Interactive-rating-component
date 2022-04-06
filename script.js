@@ -7,26 +7,32 @@ const num = document.querySelectorAll(".num")
 btn.addEventListener("click", number)
 
 let total = numbers.length
-let selected = ""  
+let selected = ""
 
-num.forEach((n, index) => { 
+num.forEach((n, index) => {
   n.addEventListener('click', () => {
-    selected = n.id
-     n.classList.toggle("active")
-     console.log(n)
-    })    
+    const active = document.querySelector(".active")
+    if(active !== null){
+      active.classList.remove("active")
+    } 
     
+    selected = n.id
+    n.classList.toggle("active")
+    console.log(active)
+
+  })
+
 })
-const reload = () =>{
+const reload = () => {
   window.location.reload()
 }
 function number() {
   box[1].classList.remove("end")
-  
+
   if (selected > 0) {
     return (result.innerHTML += `<h2> You selected ${selected} out of ${total} </h2>`)
 
   } else {
-    return (result.innerHTML += `<h2 style="cursor:pointer"onClick ="reload()">Choose rating!</h2>` )
+    return (result.innerHTML += `<h2 style="cursor:pointer"onClick ="reload()">Choose rating!</h2>`)
   }
 }
